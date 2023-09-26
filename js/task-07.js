@@ -3,9 +3,12 @@ const span = document.querySelector("#text");
 
 input.addEventListener('input', handlerRang);
 
+span.style.fontSize = '53px'
+
 function handlerRang(evt) {
   const count = evt.currentTarget.value;
-  if (evt.currentTarget.value > 0) {
+  if (count > 0) {
     span.style.fontSize = `${count}px`;
   }
+  console.log(count);
 }
